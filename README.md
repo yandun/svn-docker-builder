@@ -27,8 +27,6 @@ Create application based on template:
 
 e.g.:
 
-    oc process -n openshift svn-docker-builder -f svn-docker-builder -p APPLICATION_NAME='test'
-    SOURCE_REPOSITORY='https://github.com/puzzle/openshift3-docker-hello.git/branches/svn-docker-builder' | oc create -f -
-
+    oc process -n openshift svn-docker-builder -f svn-docker-builder -p APPLICATION_NAME='test'    \ SOURCE_REPOSITORY='https://github.com/puzzle/openshift3-docker-hello.git/branches/svn-docker-builder' | oc create -f -
 This example makes use of the fact that you can checkout GitHub repositories via Subversion.
 
